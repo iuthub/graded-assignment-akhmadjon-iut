@@ -1,0 +1,75 @@
+            * {
+              box-sizing: border-box;
+              font-family: 'Sofia', cursive;
+            }
+            ul {
+              margin: 0;
+              padding: 0;
+            }
+            ul li {
+              position: relative;
+              padding: 12px 8px 12px 40px;
+              background: #eee;
+              font-size: 18px;
+              transition: 0.2s;
+              display: flex;
+              flex-flow: row nowrap;
+              align-items: center;
+              justify-content: flex-start;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+            }
+            ul li:nth-child(odd) {
+              background: #BFA8FF;
+            }
+            ul li:hover {
+              background: #6152EE;
+            }
+            ul li .task {
+                flex-grow: 1;
+            }
+            ul li .action {
+                margin: 5px 15px;
+                vertical-align: middle;
+            }
+            ul li a {
+                color: rgb(182, 182, 182);
+            }
+            .header {
+              background-color: #e92d20;
+              padding: 30px 40px;
+              color: white;
+              text-align: center;
+            }
+            .header:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            input {
+              margin: 0;
+              border: none;
+              border-radius: 0;
+              width: 75%;
+              padding: 10px;
+              float: left;
+              font-size: 16px;
+            }
+            .addBtn {
+              padding: 10px;
+              width: 25%;
+              background: #BFA8FF;
+              color: rgb(182, 182, 182);
+              float: left;
+              text-align: center;
+              font-size: 16px;
+              cursor: pointer;
+              transition: 0.3s;
+              border-radius: 0;
+              border: none;
+            }
+            .addBtn:hover {
+              background-color: #6152EE;
+            }
